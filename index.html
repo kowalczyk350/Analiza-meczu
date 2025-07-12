@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Analiza meczu Lech – Cracovia</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>📊 Statystyki meczu: Lech Poznań – Cracovia</h1>
+  <p>Tu będą moje spostrzeżenia, wykresy i analizy.</p>
+
+  <canvas id="possessionChart" width="400" height="400"></canvas>
+
+  <script>
+    const data = {
+      labels: ['Lech', 'Cracovia'],
+      datasets: [{
+        label: 'Posiadanie piłki (%)',
+        data: [58, 42],
+        backgroundColor: ['#002f6c', '#ae0018']
+      }]
+    };
+
+    new Chart(document.getElementById('possessionChart'), {
+      type: 'doughnut',
+      data: data
+    });
+  </script>
+</body>
+</html>
