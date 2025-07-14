@@ -1,0 +1,7 @@
+# Analiza meczu piłkarskiego
+
+Projekt analizuje dane z meczu. Plik z danymi: `dane/mecz.csv`.
+
+## Wykres
+
+Wynikowy wykres zapisany jest w `wykresy/strzaly_na_zawodnika.png`
